@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Book tặng mẹ 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- BOOK -->
+  <div class="scene">
+    <div id="book" class="book">
+      <!-- Trang bìa (được JS thêm vào mảng trang như page 0) -->
+      <div class="page cover">
+        <div class="cover-inner">
+          <h1>Nhật ký </h1>
+          <p>Mom và những con giặc</p>
+          <button id="startBook" class="btn">Mở sách</button>
+        </div>
+      </div>
+      <!-- Các trang còn lại sẽ được JS sinh -->
+    </div>
+
+    <!-- Điều hướng -->
+    <div class="nav"> 
+      <span id="pageInfo">💖💖💖</span>  
+    </div>
+  </div>
+
+  <!-- CELEBRATE (thiệp) – ẩn lúc đầu -->
+  <div id="celebrate" class="celebrate hidden">
+    <div class="envelope" id="envelope">
+      <div class="flap"></div>
+      <div class="envelope-text">💌 Nhấn để mở thiệp tặng mẹ</div>
+    </div>
+
+    <div class="letter" id="letter">
+      <h1>💖 Chúc mừng sinh nhật & 20/10 MOM 💐</h1>
+      <p>Chúc MOM tủi mới nhiều sức phẻ để nuôi Bi thêm 60 năm nữa , chúc MOM ngày càng trẻ đệp để có nhiều zai theo đuổi nữa , chúc mom dáng đẹp khom cần chỉnh ăn uống cho đủ bữa . ❤️</p>
+    </div>
+
+    <canvas id="fireworks"></canvas>
+    <audio id="music" src="https://www.bensound.com/bensound-music/bensound-sunny.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
